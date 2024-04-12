@@ -28,7 +28,7 @@ document.getElementById('calcular-media').addEventListener('click', function() {
         if (nota1 && nota2) {
             const media = ((parseFloat(nota1) * 0.4) + (parseFloat(nota2) * 0.6));
             const situacao = media >= 6 ? 'Aprovado(a)' : 'Reprovado(a)';
-            const corSituacao = media >= 6 ? 'green' : 'red'; // Define a cor com base na situação
+            const corSituacao = media >= 6 ? 'green' : 'red'; 
             resultados += `
                 <p><strong>Disciplina:</strong> ${disciplina.querySelector('.disciplina-nome').value}</p>
                 <p><strong>Média:</strong> ${media.toFixed(2)}</p>

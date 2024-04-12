@@ -1,32 +1,33 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
     padding: 20px;
-    padding-top: 60px; /* Adjust this value based on the height of your header */
-    padding-bottom: 60px; /* Adjust this value based on the height of your footer */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     color: #333;
 }
 
 .container {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
-    border: 2px solid #ff0000; /* Contorno vermelho */
+    border: 2px solid #ff0000;
+    flex-grow: 1;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
+
+.container {
+    margin-top: 60px;
+    margin-bottom: 60px;}
 
 h1, h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #ff0000; /* Vermelho */
+    color: #ff0000;
 }
 
 .disciplina {
@@ -38,15 +39,15 @@ h1, h2 {
 
 .disciplina-nome, .disciplina-nota {
     padding: 5px;
-    border: 1px solid #cccccc; /* Cinza Médio */
+    border: 1px solid #cccccc;
     border-radius: 3px;
     width: 45%;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #ff0000; /* Vermelho */
-    color: #ffffff; /* Branco */
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -54,20 +55,20 @@ button {
 }
 
 button:hover {
-    background-color: #b30000; /* Vermelho mais escuro */
+    background-color: #b30000;
 }
 
 .remover-disciplina {
-    background-color: #ff0000; /* Vermelho */
-    color: #ffffff; /* Branco */
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    margin-left: 10px; /* Adiciona distância entre o botão de remover e a input box */
+    margin-left: 10px;
 }
 
 .remover-disciplina:hover {
-    background-color: #b30000; /* Vermelho mais escuro */
+    background-color: #b30000;
 }
 
 #resultados {
@@ -85,12 +86,12 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #ff0000; /* Vermelho */
-    color: #ffffff; /* Branco */
-    position: fixed; /* Fixa o header no topo */
-    top: 0; /* Alinha o header com o topo da página */
-    left: 0; /* Alinha o header com o lado esquerdo da página */
-    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    background-color: #ff0000; 
+    color: #ffffff; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 
 .logo-container {
@@ -116,20 +117,20 @@ header {
 }
 
 .navbar a {
-    color: #ffffff; /* Branco */
+    color: #ffffff; 
     text-decoration: none;
 }
 
 footer {
     width: 100%;
     padding: 20px;
-    background-color: #ff0000; /* Vermelho */
-    color: #ffffff; /* Branco */
+    background-color: #ff0000; 
+    color: #ffffff; 
     text-align: center;
-    position: fixed; /* Fixa o footer na base */
-    bottom: 0; /* Alinha o footer com a base da página */
-    left: 0; /* Alinha o footer com o lado esquerdo da página */
-    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 1000; 
 }
 
 @media (max-width: 768px) {
