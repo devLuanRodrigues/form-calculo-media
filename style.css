@@ -1,0 +1,165 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; /* Branco */
+    padding: 20px;
+    padding-top: 60px; /* Adjust this value based on the height of your header */
+    padding-bottom: 60px; /* Adjust this value based on the height of your footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff; /* Branco */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ff0000; /* Contorno vermelho */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000; /* Vermelho */
+}
+
+.disciplina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.disciplina-nome, .disciplina-nota {
+    padding: 5px;
+    border: 1px solid #cccccc; /* Cinza Médio */
+    border-radius: 3px;
+    width: 45%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Vermelho */
+    color: #ffffff; /* Branco */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b30000; /* Vermelho mais escuro */
+}
+
+.remover-disciplina {
+    background-color: #ff0000; /* Vermelho */
+    color: #ffffff; /* Branco */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px; /* Adiciona distância entre o botão de remover e a input box */
+}
+
+.remover-disciplina:hover {
+    background-color: #b30000; /* Vermelho mais escuro */
+}
+
+#resultados {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#resultados p {
+    margin-bottom: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #ff0000; /* Vermelho */
+    color: #ffffff; /* Branco */
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Alinha o header com o topo da página */
+    left: 0; /* Alinha o header com o lado esquerdo da página */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+.logo-container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+.logo-container .logo-container-a{
+    text-align: center;
+    text-decoration: none; 
+    color: aliceblue;
+}
+
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #ffffff; /* Branco */
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #ff0000; /* Vermelho */
+    color: #ffffff; /* Branco */
+    text-align: center;
+    position: fixed; /* Fixa o footer na base */
+    bottom: 0; /* Alinha o footer com a base da página */
+    left: 0; /* Alinha o footer com o lado esquerdo da página */
+    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    img, picture, video {
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .disciplina {
+        flex-direction: column;
+    }
+    .disciplina-nome, .disciplina-nota {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar li {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    button, .remover-disciplina {
+        padding: 5px 10px;
+    }
+}
