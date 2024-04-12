@@ -96,7 +96,11 @@ header {
 
 .logo-container {
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     font-size: 2.5em;
+    text-align: center;
+    text-decoration: none; 
+    color: aliceblue;
 }
 
 .logo-container .logo-container-a{
@@ -131,6 +135,11 @@ footer {
     bottom: 0; 
     left: 0; 
     z-index: 1000; 
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 @media (max-width: 768px) {
